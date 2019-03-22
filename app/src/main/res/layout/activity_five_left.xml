@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:scrolling_image_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".five_left"
+    android:background="#000"
+    android:id="@+id/five_left">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+                <com.q42.android.scrollingimageview.ScrollingImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    scrolling_image_view:speed="0.3dp"
+                    android:layout_alignParentBottom="true"
+                    scrolling_image_view:src="@drawable/dragon" />
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEXT"
+                        android:fontFamily="@font/murderer"
+                        android:background="@drawable/rounded_button"
+                        android:id="@+id/next_five_left"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_centerHorizontal="true"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/aloha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="It's a sleeping dragon..."
+                            android:layout_alignParentTop="true"
+                            android:textColor="#ffffff"/>
+
+                        <TextView
+                            android:layout_marginBottom="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="@font/aloha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shhhh, let's just walk around it...without a sound..."
+                            android:textColor="#ffffff"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/slidelinearlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/slideimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/next_btn"
+        android:fontFamily="@font/murderer"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="30sp"
+        android:fontFamily="@font/aloha"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtdescription"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:fontFamily="@font/aloha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOOSE ONE (tap)"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdescription"
+        android:fontFamily="@font/aloha"
+        android:textSize="20sp"
+        android:text="Description"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:layout_below="@+id/txttitle"
+        android:textColor="#fff"
+        android:fontFamily="@font/aloha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(swipe)"/>
+
+
+</RelativeLayout>

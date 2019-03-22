@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    android:fitsSystemWindows="true"
+    xmlns:scrolling_image_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".levels">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <GridLayout
+        android:columnCount="1"
+        android:rowCount="1"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp">
+
+        <!--Row-->
+        <!--one-->
+        <android.support.v7.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            android:id="@+id/one"
+            app:cardCornerRadius="8dp"
+            android:visibility="gone"
+            >
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:id="@+id/scrolling_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                scrolling_image_view:speed="0.3dp"
+                scrolling_image_view:src="@drawable/forest" />
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="3dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <Button
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT"
+                    android:fontFamily="@font/murderer"
+                    android:background="@drawable/rounded_button"
+                    android:id="@+id/next_one"/>
+
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You Enter the forest! It's a vast forest, dark and mysterious"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_alignParentBottom="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You must find a way to know which way to go! In which direction will the amulet glow?"
+                    android:textColor="#ffffff"/>
+            </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--one_sub-->
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            android:id="@+id/one_sub"
+            app:cardCornerRadius="8dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/inv"/>
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                scrolling_image_view:speed="0.3dp"
+                scrolling_image_view:src="@drawable/forest2" />
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="3dp"
+                android:orientation="vertical"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your path is set"
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Now your destiny is in your hands..."
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--two-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            android:id="@+id/two"
+            app:cardCornerRadius="8dp"
+            android:visibility="gone"
+            >
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                scrolling_image_view:speed="0.3dp"
+                scrolling_image_view:src="@drawable/forest3" />
+
+            <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="3dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <Button
+                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT"
+                    android:fontFamily="@font/murderer"
+                    android:background="@drawable/rounded_button"
+
+                    android:id="@+id/next_two"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You've searched, searched a lot"
+                    android:layout_above="@+id/b"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/b"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Somehow the cave is hidden, hidden from common sight. Recall what the Old man had said"
+                    android:textColor="#ffffff"
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--three-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            android:id="@+id/three"
+            app:cardCornerRadius="8dp"
+            android:visibility="gone"
+            >
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                scrolling_image_view:speed="0.3dp"
+                scrolling_image_view:src="@drawable/cave_entrance" />
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="3dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT"
+                    android:fontFamily="@font/murderer"
+
+                    android:background="@drawable/rounded_button"
+                    android:id="@+id/next_three"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/aloha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You've found the Cave"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#ffffff"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/aloha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="However, it's too dark to enter!"
+                        android:textColor="#ffffff"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--three_sub-->
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            android:id="@+id/three_sub"
+            app:cardCornerRadius="8dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/inv_2"/>
+
+            <com.q42.android.scrollingimageview.ScrollingImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                scrolling_image_view:speed="0.3dp"
+                scrolling_image_view:src="@drawable/cave" />
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="3dp"
+                android:orientation="vertical"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Slowly and Steadilty..."
+                    android:textColor="#fff"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--four-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            android:id="@+id/four"
+            app:cardCornerRadius="8dp"
+            android:visibility="gone"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NEXT"
+                android:fontFamily="@font/murderer"
+                android:background="@drawable/rounded_button"
+                android:id="@+id/next_four"/>
+
+            </android.support.v4.view.ViewPager>
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_gravity="center_horizontal|center_vertical"-->
+                <!--android:layout_margin="3dp"-->
+                <!--android:orientation="vertical"-->
+                <!--android:background="@drawable/cave_entrance"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+
+
+                <!--<Button-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="NEXT"-->
+                    <!--android:fontFamily="@font/murderer"-->
+
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:id="@+id/next_four"/>-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:fontFamily="@font/aloha"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="FOUR"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:textColor="#ffffff"/>-->
+
+                    <!--<TextView-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_alignParentBottom="true"-->
+                        <!--android:fontFamily="@font/aloha"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="But it's too dark to enter!"-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+
+        </android.support.v7.widget.CardView>
+        <!--six-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            app:cardBackgroundColor="@null"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            android:id="@+id/six"
+            app:cardCornerRadius="8dp"
+            android:visibility="gone"
+            >
+
+            <!--<com.q42.android.scrollingimageview.ScrollingImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--scrolling_image_view:speed="0.3dp"-->
+                <!--scrolling_image_view:src="@drawable/witch" />-->
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="3dp"
+                android:orientation="vertical"
+                android:background="@drawable/bridge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NEXT"
+                    android:fontFamily="@font/murderer"
+
+                    android:background="@drawable/rounded_button"
+                    android:id="@+id/next_six"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/aloha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Great! You've escaped"
+                        android:layout_alignParentTop="true"
+                        android:textColor="#ffffff"/>
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/aloha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The journey isn't over though. You must steadily cross this bridge, CAREFUL!"
+                        android:textColor="#ffffff"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

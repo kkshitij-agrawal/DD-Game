@@ -57,16 +57,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 <Button
-
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEXT"
-                    android:fontFamily="@font/murderer"
-                    android:background="@drawable/rounded_button"
+                    android:background="@drawable/btn2"
                     android:id="@+id/next_one"/>
 
 
                 <TextView
+                    android:layout_centerHorizontal="true"
                     android:textSize="25sp"
                     android:textStyle="bold"
                     android:layout_alignParentTop="true"
@@ -77,6 +77,7 @@
                     android:textColor="#ffffff"/>
 
                 <TextView
+                    android:layout_centerHorizontal="true"
                     android:layout_alignParentBottom="true"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -132,12 +133,22 @@
                     android:textColor="#fff"/>
 
                 <TextView
-                    android:textSize="20sp"
+                android:id="@+id/test"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/aloha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now your destiny is in your hands..."
+                android:textColor="#fff"/>
+
+                <TextView
+                    android:textSize="12sp"
                     android:textStyle="bold"
                     android:fontFamily="@font/aloha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Now your destiny is in your hands..."
+                    android:text="(Tap to continue)"
                     android:textColor="#fff"/>
 
             </LinearLayout>
@@ -173,14 +184,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                 <Button
-                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEXT"
                     android:fontFamily="@font/murderer"
-                    android:background="@drawable/rounded_button"
-
+                    android:background="@drawable/btn2"
+                    android:visibility="gone"
                     android:id="@+id/next_two"/>
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:text="NUMBER"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
 
                 <TextView
                     android:layout_centerHorizontal="true"
@@ -202,7 +222,7 @@
                     android:fontFamily="@font/aloha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Somehow the cave is hidden, hidden from common sight. Recall what the Old man had said"
+                    android:text="Somehow the cave is hidden, hidden from common sight. Recall what the Old man had said...'Heart's fire'?"
                     android:textColor="#ffffff"
                     />
                 </RelativeLayout>
@@ -235,18 +255,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="NEXT"
-                    android:fontFamily="@font/murderer"
-
-                    android:background="@drawable/rounded_button"
-                    android:id="@+id/next_three"/>
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/murderer"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn2"
+                    android:id="@+id/next_three"/>
+
                     <TextView
                         android:layout_centerHorizontal="true"
                         android:textSize="25sp"
@@ -262,11 +282,12 @@
                         android:layout_centerHorizontal="true"
                         android:textSize="20sp"
                         android:textStyle="bold"
+                        android:layout_marginBottom="15dp"
                         android:layout_alignParentBottom="true"
                         android:fontFamily="@font/aloha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="However, it's too dark to enter!"
+                        android:text="However, it's too dark to enter! You need a source of LIGHT"
                         android:textColor="#ffffff"
                         />
                 </RelativeLayout>
@@ -313,6 +334,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Slowly and Steadilty..."
+                    android:textColor="#fff"/>
+
+                <TextView
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aloha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Tap to continue)"
                     android:textColor="#fff"/>
 
             </LinearLayout>
@@ -396,7 +426,7 @@
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@null"
+            android:background="#000"
             app:cardBackgroundColor="@null"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
@@ -410,25 +440,24 @@
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="match_parent"-->
                 <!--scrolling_image_view:speed="0.3dp"-->
-                <!--scrolling_image_view:src="@drawable/witch" />-->
+                <!--scrolling_image_view:src="@drawable/chest" />-->
 
             <LinearLayout
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="3dp"
                 android:orientation="vertical"
-                android:background="@drawable/bridge"
+                android:background="@drawable/chest"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
 
                 <Button
+                    android:visibility="gone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NEXT"
-                    android:fontFamily="@font/murderer"
-
-                    android:background="@drawable/rounded_button"
+                    android:background="@drawable/btn2"
                     android:id="@+id/next_six"/>
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -451,10 +480,11 @@
                         android:fontFamily="@font/aloha"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="The journey isn't over though. You must steadily cross this bridge, CAREFUL!"
+                        android:text="The journey is over. You found the Treasure!"
                         android:textColor="#ffffff"
                         />
                 </RelativeLayout>
+
             </LinearLayout>
 
         </android.support.v7.widget.CardView>

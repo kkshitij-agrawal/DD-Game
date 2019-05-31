@@ -20,27 +20,31 @@
                     android:layout_alignParentBottom="true"
                     scrolling_image_view:src="@drawable/dragon" />
 
-                <LinearLayout
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
 
                     <Button
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="35dp"
+                        android:id="@+id/mic"
+                        android:layout_alignParentRight="true"
+                        android:onClick="getSpeechInput"
+                        android:background="@drawable/mic"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <Button
+                        android:layout_centerInParent="true"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NEXT"
-                        android:fontFamily="@font/murderer"
-                        android:background="@drawable/rounded_button"
+                        android:textSize="35sp"
+                        android:visibility="gone"
+                        android:textAlignment="gravity"
+                        android:fontFamily="cursive"
+                        android:background="@drawable/btn2"
                         android:id="@+id/next_five_left"/>
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+
                         <TextView
+                            android:layout_marginTop="40dp"
                             android:layout_centerHorizontal="true"
                             android:textSize="25sp"
                             android:textStyle="bold"
@@ -63,8 +67,6 @@
                             android:text="Shhhh, let's just walk around it...without a sound..."
                             android:textColor="#ffffff"
                             />
-                    </RelativeLayout>
-                </LinearLayout>
 
 
     </RelativeLayout>

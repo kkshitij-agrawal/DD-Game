@@ -10,39 +10,31 @@
     android:id="@+id/five_right">
 
     <RelativeLayout
+        android:background="@drawable/witch"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-                <com.q42.android.scrollingimageview.ScrollingImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                scrolling_image_view:speed="0.3dp"
-                scrolling_image_view:src="@drawable/witch" />
+                <!--<com.q42.android.scrollingimageview.ScrollingImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--scrolling_image_view:speed="0.3dp"-->
+                <!--scrolling_image_view:src="@drawable/witch" />-->
 
-                <LinearLayout
-                    android:layout_gravity="center_horizontal|center_vertical"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/witch"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
 
                     <Button
+                        android:layout_centerInParent="true"
                         android:layout_marginTop="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="NEXT"
-                        android:fontFamily="@font/murderer"
-
-                        android:background="@drawable/rounded_button"
+                        android:visibility="gone"
+                        android:background="@drawable/btn2"
                         android:id="@+id/next_five_right"/>
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+
                         <TextView
+                            android:layout_marginTop="40dp"
                             android:layout_centerHorizontal="true"
                             android:textSize="25sp"
                             android:textStyle="bold"
@@ -54,6 +46,7 @@
                             android:textColor="#000"/>
 
                         <TextView
+                            android:layout_marginBottom="40dp"
                             android:layout_centerHorizontal="true"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -62,10 +55,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Save yourself! SWING your sword lad!"
-                            android:textColor="#000"
-                            />
-                    </RelativeLayout>
-                </LinearLayout>
+                            android:textColor="#000" />
 
     </RelativeLayout>
 

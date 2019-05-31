@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/slidelinearlayout2"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slideimg2"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txttitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_above="@+id/swipe2"
+        android:textSize="30sp"
+        android:fontFamily="@font/aloha"
+        />
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdescription2"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"
+        android:text="Description"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"
+        android:layout_above="@+id/txtdescription2"
+        android:textColor="#fff"
+        android:id="@+id/swipe2"
+        android:fontFamily="@font/aloha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="(swipe)"/>
+
+
+</RelativeLayout>

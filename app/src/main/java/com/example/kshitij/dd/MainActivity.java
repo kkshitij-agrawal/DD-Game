@@ -2,11 +2,15 @@ package com.example.kshitij.dd;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.mtp.MtpStorageInfo;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -16,9 +20,12 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
 
     Button btn;
+    Button rules;
     TextView answerView;
 
     GlobalClass globalClass;
+
+    MediaPlayer mediaPlayer;
 
     public static final String SHARED_PREFS = "sharedPrefs";
     public static final String TEXT = "text";
@@ -31,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.music);
+        mediaPlayer.start();
         btn = findViewById(R.id.btn);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -59,6 +71,16 @@ public class MainActivity extends AppCompatActivity {
 //            loadData();
 //            updateData();
 
+        rules = findViewById(R.id.rules);
+
+        rules.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,rules.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.fade_in,R.anim.hold);
+            }
+        });
 
     }
 //        Toast.makeText(this, number, Toast.LENGTH_SHORT).show();
@@ -127,6 +149,9 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         super.onBackPressed();
         {
+
+            mediaPlayer.stop();
+            mediaPlayer.release();
             saveData();
             finishAffinity();
         }

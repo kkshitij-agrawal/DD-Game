@@ -6,6 +6,15 @@ public class GlobalClass extends Application {
 
     private int counter;
     private int position=-1;
+    private int compass_use = 0;
+
+    public int getCompass_use() {
+        return compass_use;
+    }
+
+    public void setCompass_use(int compass_use) {
+        this.compass_use = compass_use;
+    }
 
     public int getPosition() {
         return position;

@@ -83,7 +83,7 @@ public class SlideAdapter extends PagerAdapter {
 
                 globalClass.setPosition(position);
 
-                Toast.makeText(context, "Pos = " + globalClass.getPosition(), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(context, "Pos = " + globalClass.getPosition(), Toast.LENGTH_SHORT).show();
 
                 load(position);
 
@@ -103,7 +103,6 @@ public class SlideAdapter extends PagerAdapter {
     public void load(int pos){
 
         if(pos == 0)
-
             context.startActivity(new Intent(context,five_left.class));
         else if(pos == 1)
             context.startActivity(new Intent(context,five_right.class));
